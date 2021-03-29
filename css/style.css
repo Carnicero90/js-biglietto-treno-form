@@ -18,6 +18,10 @@ h2 {
 
 /* MACRO LAYOUT
    ======================= */
+.opaq {
+    opacity: 0.2;
+}
+
 .wrapper {
     width: 80%;
     margin: auto;
@@ -27,6 +31,17 @@ body {
     min-width: 320px;
     background-color: #b91450;
     font-family: 'Roboto', sans-serif;
+}
+
+.fixed {
+    background: lightgray;
+    border-radius: 5px;
+    padding: 40px;
+    z-index: 1;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
 }
 
 /* ======================= */
@@ -114,6 +129,22 @@ td {
     content: "\20AC";
 }
 
+
+/* +++ fixed +++ */
+
+.logging-icon {
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /* ======================= */
 
 /* QUERIES */
@@ -140,10 +171,14 @@ td {
         text-transform: capitalize;
     }
 
+    thead,
+    tbody {
+        width: 50%;
+    }
+
     th,
     td {
         min-height: 75px;
-
         padding-top: 10px;
     }
 

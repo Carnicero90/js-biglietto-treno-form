@@ -1,6 +1,6 @@
 var genButton = document.getElementById('gen-button');
 var delButton = document.getElementById('del-button');
-
+var payButton = document.getElementById('pay-button');
 
 genButton.addEventListener("click", function() {
 
@@ -54,6 +54,14 @@ delButton.addEventListener("click", function() {
     document.getElementById('username').value = '';
     document.getElementById('distance').value = '';
     document.getElementById('age-range').value = 'placeholder';
+})
+
+payButton.addEventListener("click", function() {
+    document.getElementById('logging-wrapper').className = '';
+    document.getElementById('main').className = 'opaq';
+    setTimeout(function() {
+        location.reload();
+    }, 5000);
 })
 
 function populateHTML(id, content) {
