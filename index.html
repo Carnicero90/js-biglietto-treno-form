@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"> -->
+    <link rel="stylesheet" href="css/my_frame.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 class="text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+    <div class="flexer text-center center user-form">
+        <div class="flexer col">
+            <label for="username">Nome Cognome</label>
+            <input id="username" type="text" placeholder="Inserisci il tuo nome" required>
+        </div>
+        <div class="flexer col">
+            <label for="distance">Km da percorrere</label>
+            <input type="number" id="distance" placeholder="Inserisci i km" required>
+        </div>
+   <div class="flexer col">
+       <label for="age-range">Fascia d'età</label>
+       <select name="age-range" id="age-range">
+        <option value="placeholder"> </option>
+        <option value="minorenne">Minorenne</option>
+        <option value="maggiorenne">Maggiorenne</option>
+        <option value="over">Over 65</option>
+     </select>
+   </div>
+   
+    </div>
+
+    <div class="text-center">
+        <button id="gen-button">Genera</button>
+        <button id="del-button">Annulla</button>
+    </div>
+
+
+    <h2 class="text-center">IL TUO BIGLIETTO</h2>
+    <div id="ticket-wrapper" class="nada">
+        <div class="ticket-info">
+            <h4>DETTAGLIO PASSEGGERI</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>NOME PASSEGGERO</th>
+                        <th>Offerta</th>
+                        <th>Carrozza</th>
+                        <th>Codice CP</th>
+                        <th>Costo Biglietto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="user"></td>
+                        <td id="offer"></td>
+                        <td id="wagon"></td>
+                        <td id="cp-code"></td>
+                        <td id="price"></td>
+                    </tr>
+                </tbody>
+            </table>
+    
+        </div>
+    
+    </div>
+    
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

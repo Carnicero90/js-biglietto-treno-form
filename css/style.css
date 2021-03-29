@@ -1,0 +1,32 @@
+/* COMMON
+   ======================= */
+
+h2 {
+   color: white;
+}
+.user-form, .ticket-info {
+   background-color: white;
+   width: 80%;
+   margin: auto;
+}
+/* ======================= */
+
+/* MACRO LAYOUT
+   ======================= */
+body {
+   background-color: #b91450;
+}
+/* ======================= */
+
+/* MICRO LAYOUT
+   ======================= */
+   button {
+      background-color: #cccccc;
+      color: #b91450;
+      font-size: 130%;
+      padding: 5px;
+   }
+.nada {
+   display: none;
+}
+/* ======================= */
