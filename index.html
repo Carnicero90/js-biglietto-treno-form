@@ -16,63 +16,67 @@
 
 <body>
     <div class="wrapper">
+        <section class="user-info">
+            <h2 class="text-center pt-20">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+            <div class="user-form text-center">
+                <div class="fields flexer text-center center">
+                    <div class="flexer col">
+                        <label for="username">Nome Cognome</label>
+                        <input id="username" type="text" placeholder="Inserisci il tuo nome" required>
+                    </div>
+                    <div class="flexer col">
+                        <label for="distance">Km da percorrere</label>
+                        <input type="number" id="distance" placeholder="Inserisci i km" required>
+                    </div>
+                    <div class="flexer col">
+                        <label for="age-range">Fascia d'età</label>
+                        <select name="age-range" id="age-range">
+                            <option value="placeholder"> </option>
+                            <option value="under">Minorenne</option>
+                            <option value="default">Maggiorenne</option>
+                            <option value="over">Over 65</option>
+                        </select>
+                    </div>
+                </div>
 
-        <h2 class="text-center pt-20">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
-        <div class="user-form text-center">
-            <div class="fields flexer text-center center">
-                <div class="flexer col">
-                    <label for="username">Nome Cognome</label>
-                    <input id="username" type="text" placeholder="Inserisci il tuo nome" required>
-                </div>
-                <div class="flexer col">
-                    <label for="distance">Km da percorrere</label>
-                    <input type="number" id="distance" placeholder="Inserisci i km" required>
-                </div>
-                <div class="flexer col">
-                    <label for="age-range">Fascia d'età</label>
-                    <select name="age-range" id="age-range">
-                        <option value="placeholder"> </option>
-                        <option value="under">Minorenne</option>
-                        <option value="default">Maggiorenne</option>
-                        <option value="over">Over 65</option>
-                    </select>
+                <div class="flexer center">
+                    <button id="gen-button">Genera</button>
+                    <button id="del-button">Annulla</button>
                 </div>
             </div>
 
-            <div class="flexer center">
-                <button id="gen-button">Genera</button>
-                <button id="del-button">Annulla</button>
+        </section>
+
+
+        <section class="ticket">
+            <h2 class="text-center pt-20">IL TUO BIGLIETTO</h2>
+            <div id="ticket-wrapper" class="nada">
+                <div class="ticket-info">
+                    <h4>DETTAGLIO PASSEGGERI</h4>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="name-field">NOME PASSEGGERO</th>
+                                <th>Offerta</th>
+                                <th>Carrozza</th>
+                                <th>Codice CP</th>
+                                <th>Costo Biglietto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="user" class="name-field"></td>
+                                <td id="offer"></td>
+                                <td id="wagon"></td>
+                                <td id="cp-code"></td>
+                                <td id="price"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <h2 class="text-center pt-20">IL TUO BIGLIETTO</h2>
-        <div id="ticket-wrapper" class="nada">
-            <div class="ticket-info">
-                <h4>DETTAGLIO PASSEGGERI</h4>
-                <table>
-                    <thead>
-                        <tr>
-                            <th class="name-field">NOME PASSEGGERO</th>
-                            <th>Offerta</th>
-                            <th>Carrozza</th>
-                            <th>Codice CP</th>
-                            <th>Costo Biglietto</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td id="user" class="name-field"></td>
-                            <td id="offer"></td>
-                            <td id="wagon"></td>
-                            <td id="cp-code"></td>
-                            <td id="price"></td>
-                        </tr>
-                    </tbody>
-                </table>
-
-            </div>
-
-        </div>
     </div>
 
 

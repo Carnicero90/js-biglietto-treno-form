@@ -1,10 +1,5 @@
 /* COMMON
    ======================= */
-.wrapper {
-    width: 80%;
-    margin: auto;
-}
-
 h2 {
     color: white;
 }
@@ -23,6 +18,11 @@ h2 {
 
 /* MACRO LAYOUT
    ======================= */
+.wrapper {
+    width: 80%;
+    margin: auto;
+}
+
 body {
     min-width: 320px;
     background-color: #b91450;
@@ -33,10 +33,16 @@ body {
 
 /* MICRO LAYOUT
    ======================= */
+/* +++ user-info +++ */
 .user-form {
     border-radius: 15px;
     box-shadow: 2px 2px 1px 1px #800e37;
     margin-top: 20px;
+}
+
+/* +++ user-info > fields +++ */
+.fields {
+    padding-bottom: 40px;
 }
 
 label {
@@ -58,10 +64,7 @@ select {
     border-radius: 5px;
 }
 
-.fields {
-    padding-bottom: 40px;
-}
-
+/* +++ user-info > buttons +++ */
 button {
     background-color: #cccccc;
     color: #b91450;
@@ -73,10 +76,17 @@ button {
     margin-right: 10px;
 }
 
+button:hover {
+    border: 2px solid #9c609d;
+}
+
+/* +++ ticket +++ */
+
 .nada {
     display: none;
 }
 
+/* +++ ticket > table */
 table {
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
@@ -104,13 +114,9 @@ td {
     content: "\20AC";
 }
 
-
-button:hover {
-    border: 2px solid #9c609d;
-}
-
 /* ======================= */
 
+/* QUERIES */
 
 @media screen and (max-width: 800px) {
     .fields {
