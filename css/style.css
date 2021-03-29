@@ -132,16 +132,19 @@ td {
     }
 
     .name-field {
-        min-height: 50px;
+        padding-top: 10px;
     }
 
     #user {
         padding-top: 10px;
+        text-transform: capitalize;
     }
 
     th,
     td {
-        padding-bottom: 0;
+        min-height: 75px;
+
+        padding-top: 10px;
     }
 
     tr {
