@@ -2,31 +2,64 @@
    ======================= */
 
 h2 {
-   color: white;
+    color: white;
 }
-.user-form, .ticket-info {
-   background-color: white;
-   width: 80%;
-   margin: auto;
+
+.user-form,
+.ticket-info {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
 }
+
 /* ======================= */
 
 /* MACRO LAYOUT
    ======================= */
 body {
-   background-color: #b91450;
+    background-color: #b91450;
 }
+
 /* ======================= */
 
 /* MICRO LAYOUT
    ======================= */
-   button {
-      background-color: #cccccc;
-      color: #b91450;
-      font-size: 130%;
-      padding: 5px;
-   }
-.nada {
-   display: none;
+.user-form {
+    border-radius: 15px;
 }
+
+label {
+    color: #be245c;
+}
+
+input {
+    text-align: center;
+}
+
+input,
+select {
+    font-size: 100%;
+    border: 1px solid #d36c91;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #cccccc;
+    color: #b91450;
+    font-size: 130%;
+    padding: 5px;
+}
+
+.nada {
+    display: none;
+}
+
+table {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
 /* ======================= */

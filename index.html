@@ -14,32 +14,32 @@
 
 <body>
     <h2 class="text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
-    <div class="flexer text-center center user-form">
-        <div class="flexer col">
-            <label for="username">Nome Cognome</label>
-            <input id="username" type="text" placeholder="Inserisci il tuo nome" required>
+    <div class="user-form text-center">
+        <div class="flexer text-center center">
+            <div class="flexer col">
+                <label for="username">Nome Cognome</label>
+                <input id="username" type="text" placeholder="Inserisci il tuo nome" required>
+            </div>
+            <div class="flexer col">
+                <label for="distance">Km da percorrere</label>
+                <input type="number" id="distance" placeholder="Inserisci i km" required>
+            </div>
+            <div class="flexer col">
+                <label for="age-range">Fascia d'età</label>
+                <select name="age-range" id="age-range">
+                    <option value="placeholder"> </option>
+                    <option value="minorenne">Minorenne</option>
+                    <option value="maggiorenne">Maggiorenne</option>
+                    <option value="over">Over 65</option>
+                </select>
+            </div>
         </div>
-        <div class="flexer col">
-            <label for="distance">Km da percorrere</label>
-            <input type="number" id="distance" placeholder="Inserisci i km" required>
+
+        <div>
+            <button id="gen-button">Genera</button>
+            <button id="del-button">Annulla</button>
         </div>
-   <div class="flexer col">
-       <label for="age-range">Fascia d'età</label>
-       <select name="age-range" id="age-range">
-        <option value="placeholder"> </option>
-        <option value="minorenne">Minorenne</option>
-        <option value="maggiorenne">Maggiorenne</option>
-        <option value="over">Over 65</option>
-     </select>
-   </div>
-   
     </div>
-
-    <div class="text-center">
-        <button id="gen-button">Genera</button>
-        <button id="del-button">Annulla</button>
-    </div>
-
 
     <h2 class="text-center">IL TUO BIGLIETTO</h2>
     <div id="ticket-wrapper" class="nada">
@@ -65,11 +65,11 @@
                     </tr>
                 </tbody>
             </table>
-    
+
         </div>
-    
+
     </div>
-    
+
 
     <script src="js/script.js"></script>
 </body>
