@@ -57,8 +57,7 @@ delButton.addEventListener("click", function() {
 })
 
 function populateHTML(id, content) {
-    var el = document.getElementById(id);
-    el.innerHTML = content;
+    document.getElementById(id).innerHTML = content;
 }
 
 function getRandInt(min, max) {
