@@ -24,6 +24,7 @@ h2 {
 /* MACRO LAYOUT
    ======================= */
 body {
+    min-width: 320px;
     background-color: #b91450;
 }
 
@@ -99,3 +100,28 @@ button:hover {
 }
 
 /* ======================= */
+
+
+@media screen and (max-width: 800px) {
+    .fields {
+        flex-wrap: wrap;
+    }
+
+    .fields>.flexer {
+        width: 80%;
+    }
+
+    table {
+        display: flex;
+    }
+
+    .name-field {
+        height: 50px;
+    }
+
+    th,
+    td {
+        display: flex;
+        flex-direction: column;
+    }
+}
