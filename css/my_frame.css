@@ -33,6 +33,11 @@ img {
     width: 100%;
 }
 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 /* CLASSES */
 
 /* Classes>flow */

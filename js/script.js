@@ -31,8 +31,7 @@ genButton.addEventListener("click", function() {
         }
 
         var finalPrice = priceFactor * priceCoeff * distanceInKm;
-        var el = document.getElementById('ticket-wrapper');
-        el.className = '';
+        document.getElementById('ticket-wrapper').className = '';
         populateHTML('user', userName);
         populateHTML('offer', outputString);
         populateHTML('wagon', getRandInt(1, 10));
@@ -46,6 +45,11 @@ genButton.addEventListener("click", function() {
 })
 
 delButton.addEventListener("click", function() {
+    var idElementsToEmpty = ['user', 'offer', 'wagon', 'cp-code', 'price'];
+    for (var element of idElementsToEmpty) {
+        populateHTML(element, '');
+    }
+    console.log(element)
     document.getElementById('ticket-wrapper').className = 'nada';
     document.getElementById('username').value = '';
     document.getElementById('distance').value = '';
@@ -58,7 +62,7 @@ function populateHTML(id, content) {
 }
 
 function getRandInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
+    var min = Math.ceil(min);
+    var max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
